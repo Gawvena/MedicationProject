@@ -1,0 +1,33 @@
+<!-- res/layout/activity_dashboard.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Medication schedule list -->
+    <TextView
+        android:id="@+id/tvMedicationSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medication Schedule"
+        android:textSize="18sp"
+        android:padding="8dp" />
+
+    <!-- RecyclerView for medication items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMedicationSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+    <!-- Add Medication Button -->
+    <Button
+        android:id="@+id/btnAddMedication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Medication"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
